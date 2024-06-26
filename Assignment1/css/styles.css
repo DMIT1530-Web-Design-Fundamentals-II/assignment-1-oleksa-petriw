@@ -95,7 +95,6 @@ h1 {
 
 .banner img {
 	height: 8rem;
-	margin-bottom: 2rem;
 }
 
 /* page footer */
@@ -180,6 +179,7 @@ h1 {
 	padding: 0.5rem;
 }
 
+/* Your Home */
 .your-home-grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -245,4 +245,73 @@ h1 {
 
 .help-box p {
 	padding: 1rem 0 2rem 0;
+}
+
+/* Home Page */
+.index-navigation {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	background-color: #E8F4F9;
+	gap: 1rem;
+	padding: 1rem;
+	justify-content: center;
+}
+
+.index-navigation a {
+	background-color: #FFFFFF;
+	padding: 0.5rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #E2E2E2;
+}
+
+.index-navigation a:link,
+.index-navigation a:visited{
+	color: #2A5EA5;
+}
+
+.index-navigation a:hover {
+	color: #FFFFFF;
+	background-color: #2A5EA5;
+}
+
+.todays-energy {
+	padding: 1rem;
+	text-align: center;
+}
+
+.todays-energy p {
+	padding: 0.5rem;
+}
+
+.index-faux-button p {
+	background-color: #1E426E;
+	border: 1px solid #1E426E;
+}
+
+.index-faux-button a:link,
+.index-faux-button a:visited{
+	color: #FFFFFF;
+}
+
+.index-faux-button a:hover p {
+	color: #1E426E;
+	background-color: #E8F4F9;
+}
+
+.by-the-numbers {
+	padding: 1rem;
+	text-align: center;
+}
+
+.by-the-numbers p {
+	padding: 0.5rem;
+}
+
+.by-the-numbers-text p:nth-of-type(odd) {
+	font-weight: bold;
+	font-size: 2rem;
 }
