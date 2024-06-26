@@ -8,25 +8,30 @@
 
 	(colors for hover states)
 	light green: #78A04D
-	light blue:#2A5EA5
+	blue: #2A5EA5
 */
 
 body {
 	margin: 0;
-    font-family: 'Calibri', sans-serif;
+    font-family: 'Arial', sans-serif;
 	background-color: #FFFFFF;
+	min-width: 24rem;
 }
 
+/* reset ul and a */
 ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 a {
 	text-decoration: none;
 }
 
+/* page header */
 .top-menu-bar {
 	background-color: #1E426E;
+	margin-bottom: 1rem;
 }
 
 .top-menu-list {
@@ -46,14 +51,141 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	text-align: center;
 }
 
-.top-menu-list a:visited {
+.top-menu-list a:visited,
+.top-menu-list a:link {
 	color: #FFFFFF;
 }
 
 .top-menu-list a:hover {
 	background-color: #78A04D;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #1E426E;
+	text-align: center;
+	font-weight:bolder;
+	padding: 0.5rem;
+}
+
+.main-menu-bar {
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+	font-weight:bold;
+}
+
+.main-menu-list {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main-menu-list a:visited,
+.main-menu-list a:link {
+	color: #1E426E;
+}
+
+.main-menu-list a:hover {
+	color: #78A04D;
+	text-decoration: underline solid #78A04D;
+}
+
+.banner img {
+	height: 8rem;
+	margin-bottom: 2rem;
+}
+
+/* page footer */
+.page-footer {
+	background-color: #E8F4F9;
+	margin-top: 1rem;
+	padding: 1rem;
+}
+
+.footer-list {
+	display: flex;
+	justify-content: space-evenly;
+	padding: auto;
+	margin-top: 1rem;
+}
+
+.footer-list a:visited,
+.footer-list a:link {
+	color: #2A5EA5;
+}
+
+.footer-list a:hover {
+	color: #78A04D;
+}
+
+/* Community */
+.community h2 {
+	text-align: center;
+	padding: 1rem;
+}
+
+.community p:nth-of-type(odd) {
+	font-weight: bold;
+}
+
+.community p {
+	padding: 1rem;
+}
+
+.tile {
+	padding: 1rem;
+}
+
+.tile h3 {
+	padding: 1rem;
+	font-size: 1rem;
+	font-weight: lighter;
+}
+
+.tile h3 {
+	background-color: #1E426E;
+}
+
+.tile a:visited,
+.tile a:link {
+	color: #FFFFFF;
+}
+
+.tile a:hover h3 {
+	background-color: #2A5EA5;
+}
+
+.community-background {
+	padding: 1rem;
+	background-image: url("../img/building-stronger.png");
+	background-repeat: none;
+	background-size: cover;
+}
+
+.community-transparent {
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.8)
+}
+
+.community-transparent h3 {
+	text-align: center;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	padding: 1rem;
+}
+
+.community-transparent p {
+	padding: 0.5rem;
+}
+
+.transparent-box-link a:link,
+.transparent-box-link a:visited{
+	color: #2A5EA5;
+}
+
+.transparent-box-link a:hover {
+	color: #78A04D;
 }
