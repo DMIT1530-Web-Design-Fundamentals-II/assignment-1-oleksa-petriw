@@ -51,6 +51,8 @@ a {
 	text-align: center;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 
 .top-menu-list-item {
@@ -63,7 +65,7 @@ a {
 	color: #FFFFFF;
 }
 
-.top-menu-list a:hover {
+.top-menu-list-item a:hover{
 	background-color: #78A04D;
 }
 
@@ -107,7 +109,6 @@ h1 {
 .footer-list {
 	display: flex;
 	justify-content: space-evenly;
-	padding: auto;
 	margin-top: 1rem;
 }
 
@@ -167,7 +168,6 @@ h1 {
 .community-background {
 	padding: 1rem;
 	background-image: url("../img/building-stronger.png");
-	background-repeat: none;
 	background-size: cover;
 }
 
@@ -190,12 +190,15 @@ h1 {
 /* Your Home */
 .your-home-grid {
 	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 33% 33% 33%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr)
 }
 
-.your-home-article {
+.img-right,
+.img-left {
+	display: grid;
 	padding: 1rem;
+	gap: 0.5rem;
 }
 
 .your-home-article h2 {
@@ -206,6 +209,19 @@ h1 {
 
 .your-home-article p {
 	padding-top: 1rem;
+}
+
+.your-home-article img {
+	width: 100%
+}
+
+.your-home-article a:link,
+.your-home-article a:visited{
+	color: #2A5EA5;
+}
+
+.your-home-article a:hover {
+	color: #78A04D;
 }
 
 .text-link a:link,
@@ -256,6 +272,10 @@ h1 {
 }
 
 /* Home Page */
+.index-nav-container {
+	background-color: #E8F4F9;
+}
+
 .index-navigation {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -325,10 +345,6 @@ h1 {
 }
 
 @media screen and (min-width: 37.5rem) {
-	body {
-		background-color: red;
-	}
-	
 	.header-menu {
 		display: flex;
 		justify-content: space-between;
@@ -348,7 +364,7 @@ h1 {
 		flex-direction: column-reverse;
 	}
 
-	.tile img {
+	.community-grid img {
 		width: 30vw;
 	}
 
@@ -361,25 +377,99 @@ h1 {
 		max-width: 35rem;
 	}
 
+	.index-navigation {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
 
+	.energy-stats-container {
+		display: flex;
+		padding: 1rem;
+		gap: 1rem;
+	}
+
+	.todays-energy {
+		border: 1px solid #F5F5F5;
+		width: calc(100% - 25rem)
+	}
+
+	.by-the-numbers {
+		border: 1px solid #F5F5F5;
+		background-color: #F5F5F5;
+		width: 30rem;
+	}
+
+	.your-home-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr)
+	}
+
+	.img-left {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+
+	.img-left img {
+		grid-column: 1/2;
+	}
+
+	.img-left p,
+	.img-left a {
+		grid-column: 2/3;
+	}
+
+	.img-right {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+
+	.img-right p,
+	.img-right a {
+		grid-column: 1/2;
+	}
+
+	.img-right img {
+		grid-column: 2/3;
+		order: 1
+	}
+
+	.additonal-help-container {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.help-box {
+		padding: 1rem;
+		width: 25vw;
+	}
 }
 
 @media screen and (min-width: 64rem) {
-	body {
-		background-color: blue;
-	}
-
 	.top-menu-list {
 		display: flex;
 		justify-content: end;
 	}
+
+	.index-navigation {
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
 }
 
 @media screen and (min-width: 80rem) {
-	body {
-		background-color: yellow;
+	.help-box {
+		width: 20rem;
 	}
 
+	.additonal-help-container,
+	.your-home-article,
+	.your-home-grid,
+	.energy-stats-container,
+	.index-navigation,
+	.footer-container,
 	.community-container,
 	.header-menu,
 	.top-menu-list,
