@@ -1,5 +1,59 @@
 /*
 	COLOUR PALETTE
+	navy blue: #1E426E
+	light grey: #F5F5F5
+	white: #FFFFFF
+	light blue: #E8F4F9
+	grey border: #E2E2E2
 
+	(colors for hover states)
+	light green: #78A04D
+	light blue:#2A5EA5
 */
 
+body {
+	margin: 0;
+    font-family: 'Calibri', sans-serif;
+	background-color: #FFFFFF;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.top-menu-bar {
+	background-color: #1E426E;
+}
+
+.top-menu-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	color: #FFFFFF;
+	justify-content: end;
+}
+
+.top-menu-list-item a {
+	text-transform: uppercase;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	height: auto;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.top-menu-list a:visited {
+	color: #FFFFFF;
+}
+
+.top-menu-list a:hover {
+	background-color: #78A04D;
+}
