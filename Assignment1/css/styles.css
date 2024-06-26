@@ -101,7 +101,6 @@ h1 {
 /* page footer */
 .page-footer {
 	background-color: #E8F4F9;
-	margin-top: 1rem;
 	padding: 1rem;
 }
 
@@ -181,11 +180,69 @@ h1 {
 	padding: 0.5rem;
 }
 
-.transparent-box-link a:link,
-.transparent-box-link a:visited{
+.your-home-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 33% 33% 33%;
+}
+
+.your-home-article {
+	padding: 1rem;
+}
+
+.your-home-article h2 {
+	padding: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.your-home-article p {
+	padding-top: 1rem;
+}
+
+.text-link a:link,
+.text-link a:visited{
 	color: #2A5EA5;
 }
 
-.transparent-box-link a:hover {
+.text-link a:hover {
 	color: #78A04D;
+}
+
+.additional-help {
+	background-color: #F5F5F5;
+	padding: 1rem;
+}
+
+.additional-help h2 {
+	text-transform: uppercase;
+	padding: 1rem;
+	text-align: center;
+}
+
+.help-box {
+	background-color: #FFFFFF;
+	margin-top: 1.5rem;
+	border: 1px solid #E2E2E2;
+	text-align: center;
+}
+
+.help-box h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1rem;
+	padding-top: 2rem;
+}
+
+.help-box a:link,
+.help-box a:visited{
+	color: #2A5EA5;
+}
+
+.help-box a:hover {
+	color: #78A04D;
+}
+
+.help-box p {
+	padding: 1rem 0 2rem 0;
 }
